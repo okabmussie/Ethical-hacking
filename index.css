@@ -4,6 +4,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    flex: 1 0 auto;
+}
+
 .left-sidebar h1,
 .left-sidebar p {
 
@@ -57,13 +61,14 @@ html, body {
 }
 
 #content {
-    flex: 1 0 auto;
+    flex: 1;
 }
 
 .footer {
-    margin-bottom: 1%;
-    flex-shrink: 0;
-    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #f5f5f5;
 }
 
